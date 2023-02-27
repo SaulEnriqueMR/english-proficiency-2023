@@ -1,0 +1,25 @@
+.encabezado {
+    background: $color-azul;
+    position: fixed;
+    top: 0;
+    padding: .5rem 0;
+    color: $color-blanco;
+
+    .pleca {
+        position: fixed;
+        top: 0;
+    }
+
+    .header__brand {
+        font-size: 1.2rem;
+    }
+}
+
+.instrucciones {
+    color: #056e31;
+}
+
+.modal__encabezado {
+    color: $color-naranja;
+    font-size: 1rem !important;
+}

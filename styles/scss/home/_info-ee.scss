@@ -1,17 +1,17 @@
 .contenedor-info-ee {
     background: $color-gris-verde;
-    padding-bottom: 2rem;
-    padding-top: 2rem;
+    padding: 2rem;
 }
 
 .info-ee {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: auto;
-    max-width: 600px;
+    max-width: 33rem;
     border-radius: 1rem;
     overflow: hidden;
     margin-bottom: 2rem;
+    color: $color-morado;
 }
 
 .info-ee__termino,
@@ -19,6 +19,8 @@
     padding: 1rem 2rem;
     border-top: $color-morado 1px solid;
     border-bottom: $color-morado 1px solid;
+    display: flex;
+    align-items: center;
 }
 
 .info-ee .info-ee__termino:last-of-type,

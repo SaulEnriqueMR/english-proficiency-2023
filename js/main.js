@@ -1,4 +1,19 @@
 $(function() {
+    function cambiarNavbarDependiendoDeScroll() {
+        var navbar = $('body');
+        if ($(window).scrollTop() > 200) {
+            navbar.addClass('scrolling');
+        } else {
+            navbar.removeClass('scrolling');
+        }
+    }
+    
+    $(window).scroll(function (event) {
+        cambiarNavbarDependiendoDeScroll();
+    });
+    
+    cambiarNavbarDependiendoDeScroll();
+
     $('.sidebar__dismiss, .overlay').on('click', function () {
         $('.sidebar').removeClass('active');
         $('.overlay').removeClass('active');

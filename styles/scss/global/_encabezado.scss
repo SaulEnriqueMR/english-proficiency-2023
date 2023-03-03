@@ -1,9 +1,13 @@
 .encabezado {
-    background: $color-azul;
+    background: transparent;
+    transition: background 200ms linear;
     position: fixed;
     top: 0;
     padding: .5rem 0;
     color: $color-blanco;
+    min-height: 5rem;
+    display: flex;
+    align-items: end;
 
     .pleca {
         position: fixed;
@@ -11,8 +15,16 @@
     }
 
     .header__brand {
-        font-size: 1.2rem;
+        left: 30%;
+        top: 1.7rem;
+        position: absolute;
     }
+}
+
+.scrolling {
+    .encabezado {
+        background: $color-azul;
+    }  
 }
 
 .instrucciones {
@@ -21,5 +33,20 @@
 
 .modal__encabezado {
     color: $color-naranja;
-    font-size: 1rem !important;
+}
+
+@media screen and (min-width: 768px) {
+    .encabezado {
+        min-height: auto;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+
+        .header__brand {
+            position: relative;
+            top: unset;
+            left: unset;
+        }
+    }
+
+    
 }

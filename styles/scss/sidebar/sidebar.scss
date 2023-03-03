@@ -2,10 +2,10 @@
 
 .sidebar {
     background-color: $color-azul;
-    width: 250px;
+    width: 300px;
     position: fixed;
     top: 0;
-    left: -250px;
+    left: -300px;
     height: 100%;
     z-index: 999;
     transition: left 0.3s;
@@ -111,10 +111,15 @@
     border-radius: 0;
     border-top-right-radius: .5rem;
     border-bottom-right-radius: .5rem;
-    font-size: 1rem;
     margin: 0;
     padding: .75rem 1.25rem !important;
     position: fixed;
-    top: 4rem;
+    top: 1rem;
     z-index: 900;
+}
+
+@media screen and (min-width: 768px) {
+    .sidebar__collapse {
+        top: 6rem;
+    }
 }

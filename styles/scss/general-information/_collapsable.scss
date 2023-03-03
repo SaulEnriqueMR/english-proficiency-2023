@@ -3,15 +3,17 @@
 
     summary {
         background: $color-azul-claro;
-        color: $color-morado;
+        color: #000;
         text-align: center;
         padding: 1rem;
         position: relative;
+        width: 100%;
+        display: block;
     }
 
     .collapsables-gi__content {
         background: #fdfdfd;
-        padding: 1rem;
+        padding: 2rem;
     }
 
     summary::marker {

@@ -1,7 +1,3 @@
-
-
-
-
 .contenedor-lineas {
     display: grid;
     gap: 4px;
@@ -33,14 +29,13 @@
     color: #010306 !important;
     padding-bottom: 1rem;
     text-decoration: none !important;
-    font-size: 1rem !important;
 }
 
 .ws__titulo {
     color: $color-morado;
     font-size: 1.5rem;
     font-weight: 400;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0 !important;
 }
 
 .ws__enlace::after {
@@ -76,6 +71,7 @@
         align-self: center;
         grid-column: 2;
         grid-row: 1;
+        margin-bottom: 1rem !important;
     }
 
     .ws__lineas {

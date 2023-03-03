@@ -1,3 +1,30 @@
 html, body {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: Lato !important;
+    text-transform: none;
+    color: #000000;
+}
+
+.btn {
+    text-transform: none;
+}
+
+.seccion__titulo {
+    font-size: 1.3rem !important;
+}
+
+p, li, button, .modal__encabezado, summary {
+    font-size: 1.1rem !important;
+}
+
+@media screen and (min-width: 768px) {
+    .seccion__titulo {
+        font-size: 2rem !important;
+    }
+    p, li, button, .modal__encabezado, summary {
+        font-size: 1.3rem !important;
+    }
+}
+
+.texto-morado {
+    color: $color-morado;
 }

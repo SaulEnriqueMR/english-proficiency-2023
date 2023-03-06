@@ -2,10 +2,10 @@
 
 .sidebar {
     background-color: $color-azul;
-    width: 300px;
+    width: 400px;
     position: fixed;
     top: 0;
-    left: -300px;
+    left: -400px;
     height: 100%;
     z-index: 999;
     transition: left 0.3s;

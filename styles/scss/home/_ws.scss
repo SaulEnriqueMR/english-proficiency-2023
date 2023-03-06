@@ -25,7 +25,7 @@
 }
 
 .ws__enlace {
-    @extend .enlace--subrayado;
+    // @extend .enlace--subrayado;
     color: #010306 !important;
     padding-bottom: 1rem;
     text-decoration: none !important;
@@ -38,14 +38,14 @@
     margin-bottom: 0 !important;
 }
 
-.ws__enlace::after {
-    @extend .enlace--subrayado__after;
-    background: $color-morado;
-}
+// .ws__enlace::after {
+//     @extend .enlace--subrayado__after;
+//     background: $color-morado;
+// }
 
-.ws__enlace:hover::after {
-    width: 100%;
-}
+// .ws__enlace:hover::after {
+//     width: 100%;
+// }
 
 .ws__enlace--unidad {
     display: inline-grid;

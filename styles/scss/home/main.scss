@@ -3,3 +3,15 @@
 @import 'experto';
 @import 'ws';
 @import 'bibliography';
+
+.cuerpo-index {
+    .header__brand {
+        color: transparent;
+    }
+}
+
+.scrolling {
+    .header__brand {
+        color: $color-blanco !important;
+    }
+}

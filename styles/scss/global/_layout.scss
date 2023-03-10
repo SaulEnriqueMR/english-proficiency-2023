@@ -10,6 +10,13 @@
     display: none;
 }
 
+.img-full {
+    display: block;
+    width: 100%;
+    margin: auto;
+    height: auto;
+}
+
 @media screen and (min-width: 768px) {
     .visible-solo-movil {
         display: none;

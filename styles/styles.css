@@ -8,11 +8,11 @@ html, body {
   text-transform: none;
 }
 
-.seccion__titulo, .ws__titulo, .titulo {
+.seccion__titulo, .ws__titulo, .titulo, .unidad__titulo {
   font-size: 1.3rem !important;
 }
 
-p, li, button, .modal__encabezado, summary, .info-ee, .sidebar__enlace, .header__brand, th, td, .texto {
+p, li, button, .modal__encabezado, summary, .info-ee, .sidebar__enlace, .header__brand, th, td, .texto, .u1-p1__titulo {
   font-size: 1.1rem !important;
 }
 
@@ -26,10 +26,10 @@ p, li, button, .modal__encabezado, summary, .info-ee, .sidebar__enlace, .header_
 }
 
 @media screen and (min-width: 768px) {
-  .seccion__titulo, .ws__titulo, .titulo {
+  .seccion__titulo, .ws__titulo, .titulo, .unidad__titulo {
     font-size: 2rem !important;
   }
-  p, li, button, .modal__encabezado, summary, .info-ee, .sidebar__enlace, .header__brand, th, td, .texto {
+  p, li, button, .modal__encabezado, summary, .info-ee, .sidebar__enlace, .header__brand, th, td, .texto, .u1-p1__titulo {
     font-size: 1.3rem !important;
   }
 }
@@ -204,6 +204,34 @@ p, li, button, .modal__encabezado, summary, .info-ee, .sidebar__enlace, .header_
   background: #F5EFCF;
 }
 
+.linea-naranja, .u1-p1, .unidad__titulo {
+  position: relative;
+}
+.linea-naranja::after, .u1-p1::after, .unidad__titulo::after {
+  content: " ";
+  position: absolute;
+  width: 25%;
+  background: #CE5958;
+  height: 4px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.unidad__titulo {
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.unidad__titulo span {
+  color: #1A529D;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .unidad__titulo span {
+    display: inline-block;
+  }
+}
 .enlace--subrayado {
   display: inline-block;
   position: relative;
@@ -314,6 +342,13 @@ p, li, button, .modal__encabezado, summary, .info-ee, .sidebar__enlace, .header_
 
 .visible-solo-escritorio {
   display: none;
+}
+
+.img-full, .u1-p1__img--desk, .u1-p1__img {
+  display: block;
+  width: 100%;
+  margin: auto;
+  height: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -837,6 +872,38 @@ p, li, button, .modal__encabezado, summary, .info-ee, .sidebar__enlace, .header_
 }
 .collapsables-gi .titulo-tablas {
   color: #1A529D;
+}
+
+.u1-p1 {
+  padding: 1rem 0;
+}
+
+.u1-p1__titulo {
+  font-weight: 700;
+  color: #CE5958;
+  text-align: center;
+}
+
+.u1-p1__img {
+  max-width: 100%;
+  width: auto;
+}
+
+.u1-p1__img--desk {
+  padding: 1rem;
+}
+
+.u1-p1__btn--desk {
+  width: 100%;
+  border: #372E5C 2px solid !important;
+  background: #372E5C;
+  color: #ffffff;
+  border-radius: 1rem;
+}
+
+.u1-p1__btn--desk:hover {
+  background: #ffffff;
+  color: #372E5C;
 }
 
 /*# sourceMappingURL=styles.css.map */

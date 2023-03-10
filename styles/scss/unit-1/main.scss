@@ -1,0 +1,33 @@
+.u1-p1 {
+    padding: 1rem 0;
+    @extend .linea-naranja;
+}
+
+.u1-p1__titulo {
+    font-weight: 700;
+    @extend .texto;
+    color: $color-naranja;
+    text-align: center;
+}
+
+.u1-p1__img {
+    @extend .img-full;
+    max-width: 100%;
+    width: auto;
+}
+.u1-p1__img--desk {
+    @extend .img-full;
+    padding: 1rem;
+
+}
+.u1-p1__btn--desk {
+    width: 100%;
+    border: $color-morado 2px solid !important;
+    background: $color-morado;
+    color: $color-blanco;
+    border-radius: 1rem;
+}
+.u1-p1__btn--desk:hover {
+    background: $color-blanco;
+    color: $color-morado;
+}

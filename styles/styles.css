@@ -173,6 +173,7 @@ p, li, button, .modal__encabezado, summary, .info-ee, .sidebar__enlace, .header_
   position: fixed;
   top: 1rem;
   z-index: 900;
+  text-transform: uppercase;
 }
 
 @media screen and (min-width: 768px) {

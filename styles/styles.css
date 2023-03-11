@@ -988,6 +988,40 @@ p, li, button, .modal__encabezado, summary, .info-ee, .sidebar__enlace, .header_
   background: #E7EFF8;
 }
 
+.collapsables-gi-3 td {
+  border-width: 2px;
+}
+.collapsables-gi-3 tr:first-of-type {
+  border-top: #1A529D 2px solid;
+}
+
+.foco {
+  display: flex;
+  border: #CE5958 2px solid;
+  padding: 1rem 2rem;
+  align-items: center;
+  border-radius: 1rem;
+  background: #ffffff;
+}
+.foco img {
+  margin-right: 1rem;
+}
+.foco p {
+  margin-bottom: 0;
+}
+
+.u1-3-azul-claro {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  background: #E7EFF8;
+  max-width: 350px;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
 .u1-p1 {
   padding: 1rem 0;
 }

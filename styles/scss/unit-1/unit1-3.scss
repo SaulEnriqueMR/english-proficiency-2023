@@ -1,0 +1,39 @@
+.collapsables-gi-3 {
+    td {
+        border-width: 2px;
+    }
+
+
+    tr:first-of-type {
+        border-top: $color-azul 2px solid;
+    }
+}
+
+.foco {
+    display: flex;
+    border: $color-naranja 2px solid;
+    padding: 1rem 2rem;
+    align-items: center;
+    border-radius: 1rem;
+    background: $color-blanco;
+
+    img {
+        margin-right: 1rem;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.u1-3-azul-claro {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    text-align: center;
+    background: $color-azul-claro;
+    max-width: 350px;
+    width: 100%;
+    border-radius: .5rem;
+}

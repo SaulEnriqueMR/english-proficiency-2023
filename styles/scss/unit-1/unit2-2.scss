@@ -15,3 +15,18 @@
         }
     }
 }
+
+.u1-2-block {
+    
+    div {
+        padding: 2rem;
+    }
+
+    div:nth-child(odd) {
+        background: $color-azul-claro;    
+    }
+    
+    // div:nth-child(even) {
+        
+    // }
+}

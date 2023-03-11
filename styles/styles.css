@@ -981,6 +981,13 @@ p, li, button, .modal__encabezado, summary, .info-ee, .sidebar__enlace, .header_
   border-right: none;
 }
 
+.u1-2-block div {
+  padding: 2rem;
+}
+.u1-2-block div:nth-child(odd) {
+  background: #E7EFF8;
+}
+
 .u1-p1 {
   padding: 1rem 0;
 }

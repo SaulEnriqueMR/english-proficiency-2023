@@ -968,6 +968,19 @@ p, li, button, .modal__encabezado, summary, .info-ee, .sidebar__enlace, .header_
   margin: 2rem 0;
 }
 
+.collapsables-gi-2 table {
+  margin-bottom: 2rem;
+}
+.collapsables-gi-2 table td {
+  border-width: 4px;
+}
+.collapsables-gi-2 table tr td:first-of-type {
+  border-left: none;
+}
+.collapsables-gi-2 table tr td:last-of-type {
+  border-right: none;
+}
+
 .u1-p1 {
   padding: 1rem 0;
 }

@@ -1,0 +1,17 @@
+.collapsables-gi-2 {
+    table {
+        margin-bottom: 2rem;
+        
+        td {
+            border-width: 4px;
+        }
+        tr {
+            td:first-of-type {
+                border-left: none;
+            }
+            td:last-of-type {
+                border-right: none;
+            }
+        }
+    }
+}

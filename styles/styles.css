@@ -8,11 +8,11 @@ html, body {
   text-transform: none;
 }
 
-.seccion__titulo, .ws__titulo, .titulo, .unidad__titulo {
+.seccion__titulo, .ws__titulo, .titulo, .unit-title, .unidad__titulo {
   font-size: 1.3rem !important;
 }
 
-p, li, button, .modal__encabezado, summary, .info-ee, .sidebar__enlace, .header__brand, th, td, .texto, .u1-p1__titulo {
+p, li, button, .modal__encabezado, summary, .info-ee, .sidebar__enlace, .header__brand, th, td, .texto, .u1-p1__titulo, .act-btn, .actividad-titulo, .unit-subtitulo {
   font-size: 1.1rem !important;
 }
 
@@ -26,10 +26,10 @@ p, li, button, .modal__encabezado, summary, .info-ee, .sidebar__enlace, .header_
 }
 
 @media screen and (min-width: 768px) {
-  .seccion__titulo, .ws__titulo, .titulo, .unidad__titulo {
+  .seccion__titulo, .ws__titulo, .titulo, .unit-title, .unidad__titulo {
     font-size: 2rem !important;
   }
-  p, li, button, .modal__encabezado, summary, .info-ee, .sidebar__enlace, .header__brand, th, td, .texto, .u1-p1__titulo {
+  p, li, button, .modal__encabezado, summary, .info-ee, .sidebar__enlace, .header__brand, th, td, .texto, .u1-p1__titulo, .act-btn, .actividad-titulo, .unit-subtitulo {
     font-size: 1.3rem !important;
   }
 }
@@ -180,9 +180,10 @@ p, li, button, .modal__encabezado, summary, .info-ee, .sidebar__enlace, .header_
     top: 6rem;
   }
 }
-.seccion {
+.seccion, .actividad {
   padding-bottom: 2rem;
   padding-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .seccion__titulo {
@@ -812,7 +813,7 @@ p, li, button, .modal__encabezado, summary, .info-ee, .sidebar__enlace, .header_
 }
 .collapsables-gi summary {
   background: #E7EFF8;
-  color: #000;
+  color: #372E5C;
   text-align: center;
   padding: 1rem;
   position: relative;
@@ -874,6 +875,98 @@ p, li, button, .modal__encabezado, summary, .info-ee, .sidebar__enlace, .header_
   color: #1A529D;
 }
 
+.unit-title {
+  color: #1A529D;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.unit-title span {
+  display: inline-block;
+  border-bottom: #CE5958 4px solid;
+  padding-bottom: 1rem;
+}
+
+.unit-subtitulo {
+  background: #E7EFF8;
+  background: linear-gradient(90deg, #E7EFF8 75%, #ffffff 100%);
+  color: #372E5C;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.unit-subtitulo img {
+  max-width: 60px;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.shadow-center {
+  padding-bottom: 2rem;
+  position: relative;
+}
+.shadow-center::after {
+  content: " ";
+  width: 50%;
+  height: 2rem;
+  position: absolute;
+  background: rgb(231, 239, 248);
+  background: linear-gradient(0deg, rgb(231, 239, 248) 10%, rgb(255, 255, 255) 40%);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.actividad {
+  padding: 2rem;
+  background: #F2F2F2;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  position: relative;
+  border-radius: 0.5rem;
+}
+.actividad::after {
+  position: absolute;
+  left: 2rem;
+  height: 4px;
+  background: #CE5958;
+  top: 0;
+  content: " ";
+  width: 40px;
+}
+.actividad li {
+  margin-bottom: 1rem;
+}
+
+.actividad-titulo {
+  color: #1A529D;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.actividad-titulo img {
+  display: inline-block;
+  max-width: 40px;
+  margin-right: 1rem;
+}
+
+.act-btn {
+  display: inline-block;
+  margin: 1rem auto !important;
+  width: auto !important;
+}
+
+.img-u1-1 {
+  display: block;
+  margin: auto;
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+
+.u1-dg-1 {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 2rem 0;
+}
+
 .u1-p1 {
   padding: 1rem 0;
 }
@@ -893,7 +986,7 @@ p, li, button, .modal__encabezado, summary, .info-ee, .sidebar__enlace, .header_
   padding: 1rem;
 }
 
-.u1-p1__btn--desk {
+.u1-p1__btn--desk, .act-btn {
   width: 100%;
   border: #372E5C 2px solid !important;
   background: #372E5C;
@@ -901,7 +994,7 @@ p, li, button, .modal__encabezado, summary, .info-ee, .sidebar__enlace, .header_
   border-radius: 1rem;
 }
 
-.u1-p1__btn--desk:hover {
+.u1-p1__btn--desk:hover, .act-btn:hover {
   background: #ffffff;
   color: #372E5C;
 }
